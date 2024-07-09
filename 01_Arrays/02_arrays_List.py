@@ -21,12 +21,14 @@ class Myarray:
     
     def display(self):
         for e in self.array:
-            print(e)
+            print(e, sep=" ", end=" ")
 
 
 array = Myarray()
 array.insert(0, 10)
 array.insert(1, 55)
 array.insert(2, 30)
+array.display()
+array.update(30,0)
 array.display()
 print(array.access(2))
